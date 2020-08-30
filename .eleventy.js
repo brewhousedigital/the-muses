@@ -6,6 +6,13 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
+
+// Custom additions
+const MinifyCSS = require("clean-css");
+const { minify } = require("terser");
+const slugify = require("slugify");
+
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -16,7 +23,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("LLL dd, yyyy");
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
@@ -32,6 +39,42 @@ module.exports = function(eleventyConfig) {
 
     return array.slice(0, n);
   });
+
+
+
+
+  // Custom
+  eleventyConfig.addFilter("minifyCSS", function(code) {
+      return new MinifyCSS({}).minify(code).styles;
+  });
+
+    eleventyConfig.addFilter("slugURL", function(urlString) {
+        return slugify(urlString, {
+            replacement: '-',
+            remove: undefined,
+            lower: true,
+            strict: true
+        });
+    });
+
+  eleventyConfig.addNunjucksAsyncFilter("minifyJS", async function (code, callback) {
+    try {
+      const minified = await minify(code);
+      callback(null, minified.code);
+    } catch (error) {
+      console.error("Terser error: ", error);
+      // Fail gracefully.
+      callback(null, code);
+    }
+  });
+
+    eleventyConfig.addShortcode("embedYoutube", function(videoURL) {
+        return "<div class='embed-container'><iframe src='" + videoURL + "' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>";
+    });
+
+
+
+
 
   eleventyConfig.addCollection("tagList", function(collection) {
     let tagSet = new Set();

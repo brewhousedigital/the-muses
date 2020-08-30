@@ -4,12 +4,13 @@ templateClass: tmpl-post
 ---
 <h1>{{ title }}</h1>
 
+<div class="pb-5 border-bottom mb-5">
 {{ content | safe }}
+</div>
 
-<hr>
-<ul>
+<div class="d-flex justify-content-between align-items-center">
+    {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+    {%- if previousPost %}<p class="">Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></p>{% endif %}
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
-  {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-  {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-  {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-</ul>
+  {%- if nextPost %}<p class="text-right">Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></p>{% endif %}
+</div>

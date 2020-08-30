@@ -1,7 +1,7 @@
 {
-  "title": "Your Blog Name",
+  "title": "The Muses",
   "url": "https://example.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "description": "The Muses are the inspirational goddesses of literature, science, and the arts. They were considered the source of the knowledge embodied in the poetry, lyric songs, and myths.\n\n",
   "feed": {
     "subtitle": "I am writing about my experiences as a naval navel-gazer.",
     "filename": "feed.xml",
@@ -13,8 +13,8 @@
     "url": "https://example.com/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
+    "name": "Brewhouse Digital",
+    "email": "zach@brewhouse.digital",
+    "url": "https://www.brewhouse.digital"
   }
 }
