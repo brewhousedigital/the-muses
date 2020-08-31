@@ -308,8 +308,8 @@ progress {
 .container,
 .container-fluid {
   width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1140,9 +1140,19 @@ button.d-block, .btn.d-block {width: 100%;}
   .d-sm-block {
     display: block;
   }
-  .d-sm-flex {
-    display: flex;
-  }
+
+    .d-sm-flex {
+        display: flex;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .d-sm-flex > * {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
   .flex-sm-row {
     flex-direction: row;
   }
@@ -1445,9 +1455,19 @@ button.d-block, .btn.d-block {width: 100%;}
   .d-md-block {
     display: block;
   }
-  .d-md-flex {
-    display: flex;
-  }
+
+    .d-md-flex {
+        display: flex;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .d-md-flex > * {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
   .flex-md-row {
     flex-direction: row;
   }
@@ -1750,9 +1770,19 @@ button.d-block, .btn.d-block {width: 100%;}
   .d-lg-block {
     display: block;
   }
-  .d-lg-flex {
-    display: flex;
-  }
+
+    .d-lg-flex {
+        display: flex;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .d-lg-flex > * {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
   .flex-lg-row {
     -ms-flex-direction: row;
     flex-direction: row;
@@ -2068,9 +2098,19 @@ button.d-block, .btn.d-block {width: 100%;}
   .d-xl-table {
     display: table;
   }
-  .d-xl-flex {
-    display: flex;
-  }
+
+    .d-xl-flex {
+        display: flex;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .d-xl-flex > * {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
   .flex-xl-row {
     -ms-flex-direction: row;
     flex-direction: row;
