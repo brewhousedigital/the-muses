@@ -1,0 +1,12 @@
+body.dark {
+    background-color: #222222;
+    color: #eeeeee;
+}
+
+.dark a {
+    color: #eeeeee;
+}
+
+.dark .post-footer {
+    color: #9d9d9d;
+}

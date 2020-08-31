@@ -69,7 +69,7 @@ module.exports = function(eleventyConfig) {
   });
 
     eleventyConfig.addShortcode("embedYoutube", function(videoURL) {
-        return "<div class='embed-container'><iframe src='" + videoURL + "' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>";
+        return "<div class='embed-container'><iframe src='" + videoURL + "' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>";
     });
 
 
