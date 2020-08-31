@@ -72,6 +72,15 @@ module.exports = function(eleventyConfig) {
         return "<div class='embed-container'><iframe src='" + videoURL + "' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>";
     });
 
+    eleventyConfig.addFilter("readableDateString", dateObj => {
+        return DateTime.fromISO(dateObj, {zone: 'utc'}).toFormat("LLL dd, yyyy");
+    });
+
+    // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+    eleventyConfig.addFilter('htmlDateStringString', (dateObj) => {
+        return DateTime.fromISO(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+    });
+
 
 
 

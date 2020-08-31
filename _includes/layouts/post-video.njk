@@ -1,0 +1,29 @@
+---
+layout: layouts/post.njk
+templateClass: tmpl-post
+permalink: "posts/{{ title|slugURL }}-{{ date|slugURL }}/index.html"
+---
+
+<p class="font-weight-bold mb-3">
+    <a href="{{ sourceURL }}" target="_blank" rel="noopener">{{ source }}</a>
+</p>
+
+<div class="mb-5">
+    {% embedYoutube "https://www.youtube-nocookie.com/embed/" + youtubeID %}
+</div>
+
+<p class="mb-5">{{ description }}</p>
+
+
+<div><time datetime="{{ date|htmlDateStringString }}">Posted on {{ "20200726"|readableDateString }}</time></div>
+<div class="post-tags">
+    <span class="d-inline-block">Tags: </span>
+    {% for tag in tags %}
+        {%- if collections.tagList.indexOf(tag) != -1 -%}
+            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+            <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+        {%- endif -%}
+    {% endfor %}
+</div>
+
+{{ content | safe }}
