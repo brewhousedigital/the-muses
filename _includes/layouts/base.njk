@@ -6,6 +6,18 @@
     <title>{{ title or metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
 
+    <meta property="og:url"                content="https://the-muses.netlify.app{{ page.url }}" />
+
+    <meta property="og:title"              content="{{ title or metadata.title }}" />
+    <meta property="og:description"        content="{{ description or metadata.description }}" />
+    {#<meta property="og:image"              content="XXXXXX" />#}
+
+    {% if layout == "layouts/post.njk" %}
+        <meta property="og:type" content="article" />
+    {% else %}
+        <meta property="og:type" content="website" />
+    {% endif %}
+
 
     {% set css %}
         {% include "../css/taurus-css.css" %}
