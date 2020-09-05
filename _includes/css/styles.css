@@ -66,3 +66,13 @@ header h1 a {
     border-color: #0069d9;
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
+
+.post-tag {
+    text-transform: capitalize;
+}
+
+.page-tag-list .post-tag {
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px 10px;
+}

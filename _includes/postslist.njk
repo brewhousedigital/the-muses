@@ -1,4 +1,5 @@
 <div class="post-container mx-auto pb-5 mb-5">
+    {% set postCountNum %}{% endset %}
     {% for post in postslist | reverse %}
         <div class="postlist-item pb-4 border-bottom mb-4">
             <a href="{{ post.url | url }}" class="postlist-link">
@@ -26,7 +27,10 @@
                 </div>
 
                 <div class="col-auto">
-                    <a class="btn btn-outline-primary" href="{{ post.url }}">Read Post</a>
+                    <a class="btn btn-outline-primary" href="{{ post.url }}">
+                        Read Post
+                        {% if page.url == "/posts/" %}<span>#{{ loop.revindex }}</span>{% endif %}
+                    </a>
                 </div>
             </div>
         </div><!-- end postlist item -->

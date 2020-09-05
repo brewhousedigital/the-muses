@@ -1,10 +1,10 @@
 ---
 layout: layouts/post.njk
-title: About Me
+title: About This Site
 templateClass: tmpl-post
 eleventyNavigation:
-  key: About Me
+  key: About
   order: 3
 ---
 
-I am a person that writes stuff.
+This site for those in the pursuit of knowledge.
