@@ -1,6 +1,17 @@
+.night-container {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 .night {
     position: absolute;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     -webkit-transform: rotateZ(45deg);
     transform: rotateZ(45deg);
     top: 0;
