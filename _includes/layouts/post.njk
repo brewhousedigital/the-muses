@@ -68,9 +68,10 @@ templateClass: tmpl-post
         shareBtn.addEventListener('click', async () => {
             try {
                 await navigator.share(shareData)
-                resultStatus.textContent = '{{ title }} shared successfully'
+                resultStatus.textContent = '🧡 Thanks for sharing 🧡'
+                resultStatus.classList.add("pt-3");
             } catch(err) {
-                resultStatus.textContent = 'Error: ' + err
+                //resultStatus.textContent = 'Error: ' + err
             }
         });
     } else {
