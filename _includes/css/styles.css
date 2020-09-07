@@ -76,3 +76,8 @@ header h1 a {
     display: inline-block;
     padding: 5px 10px;
 }
+
+
+.share-post-btn {
+    display: none;
+}

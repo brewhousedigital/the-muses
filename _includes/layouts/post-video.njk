@@ -14,16 +14,4 @@ permalink: "posts/{{ title|slugURL }}-{{ date|slugURL }}/index.html"
 
 <p class="mb-5">{{ description }}</p>
 
-
-<div><time datetime="{{ date|htmlDateStringString }}">Posted on {{ "20200726"|readableDateString }}</time></div>
-<div class="post-tags">
-    <span class="d-inline-block">Tags: </span>
-    {% for tag in tags %}
-        {%- if collections.tagList.indexOf(tag) != -1 -%}
-            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-            <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-        {%- endif -%}
-    {% endfor %}
-</div>
-
 {{ content | safe }}
