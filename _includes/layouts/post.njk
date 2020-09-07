@@ -62,7 +62,18 @@ templateClass: tmpl-post
     let shareBtn = document.querySelector('.share-post-btn');
     let resultStatus = document.querySelector('.share-status-container');
 
-    if(navigator.canShare) {
+
+    // navigatior.canShare is not supported in ANY browser but android
+    // Use a regex instead
+    function _isMobile(){
+        // if we want a more complete list use this: http://detectmobilebrowsers.com/
+        // str.test() is more efficent than str.match()
+        // remember str.test is case sensitive
+        return (/iphone|ipad|android/).test(navigator.userAgent.toLowerCase());
+    }
+
+    //if(navigator.canShare) {
+    if(_isMobile()) {
         shareBtn.style.display = "inline-block";
 
         shareBtn.addEventListener('click', async () => {
