@@ -7,22 +7,26 @@ title: About This Site
 <h1>{{ title }}</h1>
 <p class="mb-5">This site is for those in the pursuit of knowledge.</p>
 
-<h2>Want to submit a video for the blog?</h2>
+<h2 class="mb-5">Want to submit a video for the blog?</h2>
 
-<div class="d-flex">
-    <div class="col-auto">
-        <form name="the-muses-video-submission" netlify>
-            <div class="form-group mb-5">
-                <label for="video-name">Video Name</label>
-                <input type="text" name="video-name" id="video-name">
-            </div><!-- end from group -->
+<form name="the-muses-video-submission" netlify style="max-width: 400px;">
+    <div class="form-group mb-5">
+        <label for="video-name" class="sr-only">Video Name</label>
+        <input type="text"
+               class="form-control form-control-lg"
+               name="video-name"
+               id="video-name"
+               placeholder="Video Name">
+    </div><!-- end from group -->
 
-            <div class="form-group mb-5">
-                <label for="video-url">Video URL</label>
-                <input type="text" name="video-url" id="video-url">
-            </div><!-- end from group -->
+    <div class="form-group mb-5">
+        <label for="video-url" class="sr-only">Video URL</label>
+        <input type="url"
+               class="form-control form-control-lg"
+               name="video-url"
+               id="video-url"
+               placeholder="Video URL">
+    </div><!-- end from group -->
 
-            <div><button class="btn btn-primary" type="submit">Send!</button></div>
-        </form>
-    </div><!-- end col -->
-</div><!-- end row -->
+    <div><button class="btn btn-primary btn-lg d-block w-100" type="submit">Send!</button></div>
+</form>

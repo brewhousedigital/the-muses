@@ -154,3 +154,11 @@ main {
 .review-random {
     bottom: 0;
 }
+
+input.form-control {
+    background: rgba(0,0,0,0.6);
+    border: 0;
+    border-bottom: 3px dotted #f1c40f;
+    border-radius: 0;
+    color: #ffffff;
+}
