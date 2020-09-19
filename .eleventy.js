@@ -72,8 +72,20 @@ module.exports = function(eleventyConfig) {
         return "<div class='embed-container'><iframe src='" + videoURL + "' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>";
     });
 
+    eleventyConfig.addShortcode("alert", function(content) {
+        return `
+            <div class='d-flex align-items-center font-weight-bold px-3 border mb-5'>
+                <span class='font-50 mr-3'>!</span>
+                <span>${content}</span>
+            </div>`;
+    });
+
     eleventyConfig.addFilter("readableDateString", dateObj => {
         return DateTime.fromISO(dateObj, {zone: 'utc'}).toFormat("LLL dd, yyyy");
+    });
+
+    eleventyConfig.addFilter("getArrayFromObject", function(object) {
+        return JSON.stringify(Object.values(object));
     });
 
     // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
@@ -181,8 +193,7 @@ module.exports = function(eleventyConfig) {
         return tagSet;
     });
 
-    eleventyConfig.addPassthroughCopy("img");
-    eleventyConfig.addPassthroughCopy("css");
+    eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("manifest.json");
 
     /* Markdown Overrides */

@@ -12,8 +12,8 @@
 
             <p>{{ post.data.description }}</p>
 
-            <div class="d-flex align-items-center mb-2 post-footer">
-                <div>
+            <div class="row align-items-center mb-2 post-footer">
+                <div class="col">
                     <time datetime="{{ post.date | htmlDateString }}">Posted on {{ post.date | readableDate }}</time>
                     <div class="post-tags">
                         <span class="d-inline-block">Tags: </span>

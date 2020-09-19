@@ -1,16 +1,16 @@
 {
   "title": "The Muses",
-  "url": "https://the-muses.netlify.app/",
+  "url": "https://muses.brewhouse.digital/",
   "description": "The Muses are the inspirational goddesses of literature, science, and the arts. They were considered the source of the knowledge embodied in the poetry, lyric songs, and myths.",
   "feed": {
     "subtitle": "For the pursuit of knowledge",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://the-muses.netlify.app/"
+    "id": "https://muses.brewhouse.digital/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://the-muses.netlify.app/feed/feed.json"
+    "url": "https://muses.brewhouse.digital/feed/feed.json"
   },
   "author": {
     "name": "Brewhouse Digital",

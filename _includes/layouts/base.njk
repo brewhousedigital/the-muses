@@ -3,14 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>{{ title or metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
 
-    <meta property="og:url"                content="https://the-muses.netlify.app{{ page.url }}" />
+    <meta property="og:url"                content="https://muses.brewhouse.digital{{ page.url }}" />
 
     <meta property="og:title"              content="{{ title or metadata.title }}" />
     <meta property="og:description"        content="{{ description or metadata.description }}" />
-    <meta property="og:image"              content="https://the-muses.netlify.app/img/opengraph-the-muses.png" />
+    <meta property="og:image"              content="https://muses.brewhouse.digital/images/opengraph-the-muses.png" />
     <meta property="og:image:width"        content="1000" />
     <meta property="og:image:height"       content="525" />
 
@@ -26,19 +27,19 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <link rel="manifest" href="/manifest.json">
-    <link rel="icon" sizes="192x192" type="image/png" href="/img/icons/android-icon-192x192-manifest.jpg">
-    <link rel="apple-touch-icon" href="/img/icons/apple-icon-72x72-manifest.jpg">
-    <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-icon-152x152-manifest.jpg">
-    <link rel="apple-touch-icon" sizes="192x192" href="/img/icons/android-icon-192x192-manifest.jpg">
+    <link rel="icon" sizes="192x192" type="image/png" href="/images/icons/android-icon-192x192-manifest.jpg">
+    <link rel="apple-touch-icon" href="/images/icons/apple-icon-72x72-manifest.jpg">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152-manifest.jpg">
+    <link rel="apple-touch-icon" sizes="192x192" href="/images/icons/android-icon-192x192-manifest.jpg">
 
-    {% set css %}
-        {% include "../css/taurus-css.css" %}
-        {% include "../css/shooting-stars.css" %}
-        {% include "../css/styles.css" %}
-        {% include "../css/dark-mode.css" %}
-    {% endset %}
 
     <style>
+        {% set css %}
+        {% include "_includes/css/taurus-css.css" %}
+        {% include "_includes/css/shooting-stars.css" %}
+        {% include "_includes/css/styles.css" %}
+        {% include "_includes/css/dark-mode.css" %}
+        {% endset %}
         {{ css | minifyCSS | safe }}
     </style>
 
@@ -84,7 +85,7 @@
             <a href="/about/" class="btn font-weight-bold">About</a>
             <a href="/posts/" class="btn font-weight-bold">Posts</a>
             <a href="/tags/" class="btn font-weight-bold">Tags</a>
-            <button type="button" class="btn btn-primary dark-mode-toggle">🌙</button>
+            {#<button type="button" class="btn btn-primary dark-mode-toggle">🌙</button>#}
         </div>
     </div><!-- end row -->
 </header>
@@ -97,16 +98,17 @@
 
 
 
-<footer class="container"></footer>
+<footer class="text-center pb-5">
+    🔥 <a href="https://www.brewhouse.digital/" target="_blank" rel="noopener">A Brewhouse Digital site</a> 🔥
+</footer>
 
 
-
-{% set js %}
-    {% include "../js/scripts.js" %}
-{% endset %}
 
 <script>
-    {#{{ js | minifyJS | safe }}#}
+    {% set js %}
+    {% include "_includes/js/scripts.js" %}
+    {% endset %}
+
     {{ js | safe }}
 </script>
 

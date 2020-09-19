@@ -1,0 +1,144 @@
+---
+layout: layouts/base.njk
+title: "Italian Learning"
+permalink: /language/italian/
+---
+
+<style>
+    {% set lanuageCSS %}
+    {% include "_includes/css/libraries/micro-modal.css" %}
+    {% endset %}
+    {{ lanuageCSS | minifyCSS | safe }}
+</style>
+
+
+<div class="text-center mb-5">
+    <img src="/images/language/language-italian-logo.png" alt="Italian Language Learning Logo">
+</div>
+
+
+<div class="row justify-content-center">
+    <div class="col-xl-4 mb-5">
+        <button class="btn btn-outline-primary d-block w-100"
+                aria-expanded="false"
+                type="button"
+                aria-controls="italian-learning-instructions"
+                id="italian-learning-instructions-btn"
+                data-expand-btn="italian-learning-instructions"
+                data-expand-group-btn="italian-learning-header">Instructions</button>
+    </div><!-- end col -->
+
+    <div class="col-xl-4 mb-5">
+        <button class="btn btn-outline-primary d-block w-100"
+                aria-expanded="false"
+                type="button"
+                aria-controls="italian-learning-vocab"
+                id="italian-learning-vocab-btn"
+                data-expand-btn="italian-learning-vocab"
+                data-expand-group-btn="italian-learning-header">Vocab List</button>
+    </div><!-- end col -->
+
+    <div class="col-xl-4 mb-5">
+        <a href="/images/language/Anki-Italian-Deck.apkg" class="btn btn-outline-primary d-block w-100" download>Download Anki Deck</a>
+    </div><!-- end col -->
+</div><!-- end row -->
+
+
+<div class="expand-content-container mb-5">
+    <div id="italian-learning-instructions"
+         role="region"
+         aria-labelledby="italian-learning-instructions-btn"
+         data-expand="italian-learning-instructions"
+         data-expand-group="italian-learning-header">
+        <div>
+            <h2 class="mb-5">How to use this language learning tool</h2>
+            <p>This site functions like a flashcard system. Each day, try to learn a minimum of three lessons. If you are confident in trying more, go for it! The total number of flash cards will add up over time to a maximum of 15. 10 previous cards, plus 5 random cards from your history. Repeating previous cards will help you store the words in your long term memory.</p>
+            <p>When you start a lesson, you have three buttons on your screen. A blue "check" button will show the translation when clicked. Try to guess the word out loud or in your head before clicking this. Once you have clicked "check", you will be given two new options. The "Correct!" button will mark this flashcard as completed, and clear it from your current lesson. If you choose "Dang", it will move this flashcard to the end of the deck and you will see it again. This way you can try again once you've completed the other cards in the lesson. At the bottom is the "close" button which will clear that lesson for you at any time.</p>
+            <p>Each card has a random chance of showing the English or the Italian word. This helps create the association between words by translating them back and forth. You'll see what language the word is by the flag at the top of the card.</p>
+            <p>As you go through the cards, the site will read out the italian word to you, which will help you develop an ear for the language. Practice by saying the words out loud as well. If you need to hear the word again, just click the blue "check" button again.</p>
+            <p>Once you have completed a lesson and feel confident that you have learned the words in it, you can click on the box for "Learnt" which will unlock the next lesson. This saves your progress as you go so when you return, you can pick up where you left off. </p>
+            <p>This is language learning tool is designed to be very quick, and easy to access. Ideally you should visit the lessons a couple of times over the course of your day to really hammer home the vocabulary. Each lesson should take one minute or less. Feel free to repeat lessons as many times as you want or need.</p>
+            <p>If you are interested in doing a random review of 15 words, you can click the button at the bottom of your screen that looks like a barbell. This will choose 15 random words from lessons you've previously completed.</p>
+        </div> {# extra div to collapse content in PHPStorm #}
+    </div><!-- end expand content -->
+
+    <div id="italian-learning-vocab"
+         role="region"
+         aria-labelledby="italian-learning-vocab-btn"
+         data-expand="italian-learning-vocab"
+         data-expand-group="italian-learning-header">
+        <div>
+            <h2 class="mb-5">Vocab List</h2>
+
+            <div id="vocab-list-container" class="row justify-content-between">
+                {% for vocab in language.italian %}
+                    <div class="col-auto px-3 mb-5 text-center">
+                        <div class="">Lesson {{ loop.index }}</div>
+                        <div class="font-weight-bold">{{ vocab.it }}</div>
+                        <div class="">{{ vocab.en }}</div>
+                    </div><!-- end col -->
+                {% endfor %}
+            </div>
+        </div>{# extra div to collapse content in PHPStorm #}
+    </div><!-- end expand content -->
+</div><!-- end expand container -->
+
+
+
+<div id="lessons-block" class="row">
+    {% for lesson in language.italian %}
+        <div class="col-xl-3 col-6 mb-5 text-center">
+            <button class="btn btn-primary start-flashcard mb-2 w-100 d-block"
+                    data-id="{{ loop.index }}"
+                    data-micromodal-trigger="flashcard-modal">
+                <span class="d-block" style="font-size: 12px;">Lesson</span>
+                <span class="font-weight-bold">{{ loop.index }}</span>
+            </button>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input language-learning-checkbox" id="languageLearning{{ loop.index }}" data-num="{{ loop.index }}">
+                <label class="custom-control-label" for="languageLearning{{ loop.index }}">Learned</label>
+            </div><!-- end custom control -->
+        </div><!-- end col -->
+    {% endfor %}
+</div><!-- end lesson block -->
+
+
+
+<button class="btn btn-success review-random position-sticky w-100 font-50 mb-5 d-block"
+        data-micromodal-trigger="flashcard-modal">🏋️‍♂</button>
+
+
+
+{# Flashcard Modal #}
+<div id="flashcard-modal" class="modal micromodal-slide" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true">
+            <div id="flashcard-modal-content" class="text-center"></div>
+
+            <div class="text-center"><button class="btn" data-micromodal-close>Close</button></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    {% set lanuageJS %}
+    {% include "_includes/js/libraries/micro-modal.js" %}
+    {% include "_includes/js/language/speech.js" %}
+    {% include "_includes/js/language/italian/load-italian.js" %}
+
+    const wordList = [
+        {% for word in language.italian %}{{ word|getArrayFromObject|safe }},{% endfor %}
+    ];
+
+
+
+    {% include "_includes/js/language/controller.js" %}
+    {% endset %}
+
+    {{ lanuageJS | safe }}
+</script>
