@@ -68,8 +68,14 @@ module.exports = function(eleventyConfig) {
         }
     });
 
-    eleventyConfig.addShortcode("embedYoutube", function(videoURL) {
-        return "<div class='embed-container'><iframe src='" + videoURL + "' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>";
+    eleventyConfig.addShortcode("embedVideo", function(videoType, videoID) {
+        let url = "";
+
+        if(videoType === "youtube") {
+            url = "<div class='embed-container'><iframe src='https://www.youtube-nocookie.com/embed/" + videoID + "' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>";
+        }
+
+        return url;
     });
 
     eleventyConfig.addShortcode("alert", function(content) {

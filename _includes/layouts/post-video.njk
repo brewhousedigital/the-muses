@@ -9,7 +9,7 @@ permalink: "posts/{{ title|slugURL }}-{{ date|slugURL }}/index.html"
 </p>
 
 <div class="mb-5">
-    {% embedYoutube "https://www.youtube-nocookie.com/embed/" + youtubeID %}
+    {% embedVideo videoType, videoID %}
 </div>
 
 <p class="mb-5">{{ description }}</p>

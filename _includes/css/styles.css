@@ -145,6 +145,7 @@ main {
     min-height: 80vh;
 }
 
+.font-22 {font-size: 22px;}
 .font-50 {font-size: 50px;}
 
 [data-expand] {
