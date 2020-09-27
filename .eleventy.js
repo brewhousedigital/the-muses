@@ -68,11 +68,19 @@ module.exports = function(eleventyConfig) {
         }
     });
 
-    eleventyConfig.addShortcode("embedVideo", function(videoType, videoID) {
+    eleventyConfig.addShortcode("embedVideo", function(
+        videoType = "",
+        videoID = "",
+        sourceURL = "",
+        videoCover = ""
+    ) {
         let url = "";
 
         if(videoType === "youtube") {
             url = "<div class='embed-container'><iframe src='https://www.youtube-nocookie.com/embed/" + videoID + "' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>";
+
+        } else if(videoType === "curiositystream") {
+            url = "<div><a href='" + sourceURL + "' target='_blank' rel='noopener'><img src='" + videoCover + "' alt='' class='border-radius-20'></a></div>";
         }
 
         return url;
@@ -147,6 +155,7 @@ module.exports = function(eleventyConfig) {
                         case "posts":
 
                         // Authors
+                        case "colin":
                         case "damon":
                         case "steve":
                         case "zach":
@@ -178,6 +187,7 @@ module.exports = function(eleventyConfig) {
                 tags = tags.filter(function(item) {
                     switch(item) {
                         // this list should match the `filter` list in tags.njk
+                        case "colin":
                         case "damon":
                         case "steve":
                         case "zach":

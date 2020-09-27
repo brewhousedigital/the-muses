@@ -135,13 +135,13 @@ function generateCardTemplate(thisEl, question, answer, pronunciation, loopIndex
         "<div class='small mb-4'>" + pronunciation + "</div>" +
         "</div>" +
         "<div class='actions mb-5'>" +
-        "<button class='btn btn-primary btn-block mb-3 check-answer'>Check</button>" +
+        "<button class='btn btn-primary w-100 d-block mb-3 check-answer'>Check</button>" +
         "<div class='row'>" +
         "<div class='col-6'>" +
-        "<button class='btn btn-success btn-block correct-answer' disabled>Correct!</button>" +
+        "<button class='btn btn-success w-100 d-block correct-answer' disabled>Correct!</button>" +
         "</div><!-- end col -->" +
         "<div class='col-6'>" +
-        "<button class='btn btn-danger btn-block wrong-answer' disabled>Dang</button>" +
+        "<button class='btn btn-danger w-100 d-block wrong-answer' disabled>Dang</button>" +
         "</div><!-- end col -->" +
         "</div><!-- end row -->" +
         "</div><!-- end actions -->" +

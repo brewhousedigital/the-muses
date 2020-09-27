@@ -56,7 +56,7 @@ templateClass: tmpl-post
     let shareData = {
         title: '{{ metadata.title }}',
         text: '{{ title or metadata.title }}',
-        url: 'https://muses.brewhouse.digital{{ page.url }}',
+        url: '{{ metadata.url }}{{ page.url }}',
     }
 
     let shareBtn = document.querySelector('.share-post-btn');

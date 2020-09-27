@@ -147,6 +147,7 @@ main {
 
 .font-22 {font-size: 22px;}
 .font-50 {font-size: 50px;}
+.border-radius-20 {border-radius: 20px;}
 
 [data-expand] {
     display: none;

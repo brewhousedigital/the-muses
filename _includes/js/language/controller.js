@@ -274,14 +274,14 @@ function template_card(modalContent, question, answer) {
             </div>
 
             <div class='actions mb-5'>
-                <button class='btn btn-primary btn-block mb-3 check-answer' style="padding: 30px 0;">Check</button>
+                <button class='btn btn-primary w-100 d-block mb-3 check-answer' style="padding: 30px 0;">Check</button>
 
                 <div class='row'>
                     <div class='col-6'>
-                        <button class='btn btn-success btn-block correct-answer' disabled style="padding: 30px 0;">Correct!</button>
+                        <button class='btn btn-success w-100 d-block correct-answer' disabled style="padding: 30px 0;">Correct!</button>
                     </div>
                     <div class='col-6'>
-                        <button class='btn btn-danger btn-block wrong-answer' disabled style="padding: 30px 0;">Dang</button>
+                        <button class='btn btn-danger w-100 d-block wrong-answer' disabled style="padding: 30px 0;">Dang</button>
                     </div>
                 </div>
             </div>
