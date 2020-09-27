@@ -15,7 +15,13 @@ eleventyComputed:
   title: Tagged “{{ tag }}”
 permalink: /tags/{{ tag }}/
 ---
-<h1>Tagged “<span class="post-tag">{{ tag }}</span>”</h1>
+
+{% if tag == "colin" or tag == "damon" or tag == "steve" or tag == "zach" %}
+    <h1>Videos from <span class="post-tag">{{ tag }}</span></h1>
+{% else %}
+    <h1>Tagged “<span class="post-tag">{{ tag }}</span>”</h1>
+{% endif %}
+
 
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}
