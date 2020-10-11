@@ -1,0 +1,233 @@
+[
+    {
+        "name": "Real Engineering",
+        "image": "https://yt3.ggpht.com/a/AATXAJy-b1i9ksgJgvS0cISLdqcNOh7DXSA_9-kzey3VkQ=s100-c-k-c0xffffffff-no-rj-mo",
+        "description": "Interesting answers to simple questions.",
+        "tags": ["engineering", "military", "energy", "space", "materials"],
+        "url": "https://www.youtube.com/c/RealEngineering/videos"
+    },
+    {
+        "name": "Absolute History",
+        "image": "https://yt3.ggpht.com/a/AATXAJzvC15xxbOjMOEjWyaaTIYBMjD5kJOhDUyN0bY0wg=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Welcome to Absolute History - the home of fun, shocking and curious tales from throughout history.",
+        "tags": ["history", "engineering"],
+        "url": "https://www.youtube.com/channel/UCr5qeBG9g7bGtMGyHG2GzbQ/videos"
+    },
+    {
+        "name": "After Skool",
+        "image": "https://yt3.ggpht.com/a/AATXAJyR3olF9xrg7UOK5_E6yWnbLulLMFucT60g7Dtb=s88-c-k-c0x00ffffff-no-rj",
+        "description": "We cannot change the world. But we can change ourselves...and that will change the world. The goal of this channel is to empower the individual and deliver profound ideas through art.",
+        "tags": ["psychology", "self-development"],
+        "url": "https://www.youtube.com/c/AfterSkool/videos"
+    },
+    {
+        "name": "AsapSCIENCE",
+        "image": "https://yt3.ggpht.com/a/AATXAJycc8sc1P2Xbra_huICL5JN_RglsOdBkJJq8DtAJw=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Making science make sense.",
+        "tags": ["science", "biology", "technology"],
+        "url": "https://www.youtube.com/user/AsapSCIENCE/videos"
+    },
+    {
+        "name": "awwwards.",
+        "image": "https://yt3.ggpht.com/a/AATXAJwhKBQ3eP8YeO7jfbeRza_lxQ2gj3-ilCrBkyd01g=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Awwwards Conference brings you the hottest topics and newest technologies - a fundamental resource to keep you up to date with the cutting edge of design and the web.",
+        "tags": ["design", "inspiration", "art"],
+        "url": "https://www.youtube.com/c/AwwwardsTV/videos"
+    },
+    {
+        "name": "Big Think",
+        "image": "https://yt3.ggpht.com/a/AATXAJx9gre39HqWVbR7yFQ9fOJNrQj2kk8R23IsdG889Q=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Get actionable lessons from the world’s greatest thinkers & doers. Our experts are either disrupting or leading their respective fields. We aim to help you explore the big ideas and core skills that define knowledge in the 21st century, so you can apply them to the questions and challenges in your own life.",
+        "tags": ["science"],
+        "url": "https://www.youtube.com/c/bigthink/videos"
+    },
+    {
+        "name": "Brew",
+        "image": "https://yt3.ggpht.com/a/AATXAJx6o9RfKcemAkqEZzTh-M4oXNdMQjj4tMTDstc7=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Solving mysteries, one cup at a time ☕.",
+        "tags": ["mysteries", "investigations"],
+        "url": "https://www.youtube.com/c/BrewSolves/videos"
+    },
+    {
+        "name": "CGP Grey",
+        "image": "https://yt3.ggpht.com/a/AATXAJwaTfk4dEmsJlGE92Dmv4r5l7elpFRKQbiTIYCl=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Short explanatory videos on varying subjects, including politics, geography, economics, history, and culture.",
+        "tags": ["science", "politics", "history"],
+        "url": "https://www.youtube.com/greymatter/videos"
+    },
+    {
+        "name": "City Beautiful",
+        "image": "https://yt3.ggpht.com/a/AATXAJz9tsn_NlSRcqpfmKeofHZtxWn3lkklH-uycMwEOg=s100-c-k-c0xffffffff-no-rj-mo",
+        "description": "Dedicated to educating everyone about cities and city planning.",
+        "tags": ["city planning", "history"],
+        "url": "https://www.youtube.com/c/CityBeautiful/videos"
+    },
+    {
+        "name": "CrashCourse",
+        "image": "https://yt3.ggpht.com/a/AATXAJwqTP631y63gzRfteNeRY6OZgsyIBhZWWlS6UvA2g=s88-c-k-c0x00ffffff-no-rj",
+        "description": "high quality educational videos should be available to everyone for free!",
+        "tags": ["science", "philosophy"],
+        "url": "https://www.youtube.com/user/crashcourse/videos"
+    },
+    {
+        "name": "Derek Banas",
+        "image": "https://yt3.ggpht.com/a/AATXAJzCCG7r_PWNZBE9SOTRKKGMiBGcTG8XAA33BT2Axw=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Tutorials and explanations on a wide variety of math-based subjects.",
+        "tags": ["math", "science", "programming"],
+        "url": "https://www.youtube.com/c/derekbanas/videos"
+    },
+    {
+        "name": "Eudaimonia",
+        "image": "https://yt3.ggpht.com/a/AATXAJw3ltIOJXmIsoU4x5h7kLE9uU_Gf_WIrhzBLV8Kog=s88-c-k-c0x00ffffff-no-rj",
+        "description": "To be eudaimon is to be successful, to have what is most desirable, to flourish.",
+        "tags": ["classics", "philosophy"],
+        "url": "https://www.youtube.com/c/Obtaineudaimonia/videos"
+    },
+    {
+        "name": "Johnny Harris",
+        "image": "https://yt3.ggpht.com/a/AATXAJxZWI1-32ZD5XVtVYOLfSeY5XqrekgDJ-IWI-SJLg=s88-c-k-c0x00ffffff-no-rj",
+        "description": "I make videos about maps and many other things. ",
+        "tags": ["history", "mysteries"],
+        "url": "https://www.youtube.com/c/JohnnyHarrisvox/videos"
+    },
+    {
+        "name": "Kurzgesagt – In a Nutshell",
+        "image": "https://yt3.ggpht.com/a/AATXAJzX2EgbPgRYbO3fna7o0iAptB3fYSOwJNVRfL_HqA=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Videos explaining things with optimistic nihilism.",
+        "tags": ["science", "history"],
+        "url": "https://www.youtube.com/c/inanutshell/videos"
+    },
+    {
+        "name": "Matt Risinger",
+        "image": "https://yt3.ggpht.com/a/AATXAJy37oYvxLqzOig-QmeSHahvfHvMzxOymeoeUs1GXA=s100-c-k-c0xffffffff-no-rj-mo",
+        "description": "This channel is to educate YOU on the principles of Building Science in a practical way.  I build homes that are dramatically more energy efficient, durable, healthy, and comfortable than most new homes in America.",
+        "tags": ["construction", "woodworking"],
+        "url": "https://www.youtube.com/channel/UCFCTrfb1JUJjs3Im8OZDtBw"
+    },
+    {
+        "name": "minutephysics",
+        "image": "https://yt3.ggpht.com/a/AATXAJw3KkIY6VQ3tbSVLfKdEqFQ8rCfBewxLc0dJv8i=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Simply put: cool physics and other sweet science.",
+        "tags": ["science", "physics"],
+        "url": "https://www.youtube.com/user/minutephysics/videos"
+    },
+    {
+        "name": "Nostalgia Nerd",
+        "image": "https://yt3.ggpht.com/a/AATXAJxMBv_W07L8vpD-CjJdXzKRxGfVnMk8sXuyiO5gaw=s88-c-k-c0x00ffffff-no-rj",
+        "description": "The channel's main focus is computer related items from the 80s & 90s.",
+        "tags": ["technology", "science"],
+        "url": "https://www.youtube.com/c/Nostalgianerd/videos"
+    },
+    {
+        "name": "Numberphile",
+        "image": "https://yt3.ggpht.com/a/AATXAJy3xtsIRabi8_-bFFQYCKg2UTHDEiyFbyfrYbj7Tg=s100-c-k-c0xffffffff-no-rj-mo",
+        "description": "Videos about numbers - it's that simple.",
+        "tags": ["mathmatics", "philosophy"],
+        "url": "https://www.youtube.com/user/numberphile/videos"
+    },
+    {
+        "name": "PBS Eons",
+        "image": "https://yt3.ggpht.com/a/AATXAJyo4-vmomIpzLIy2_nv309uNKLbiupBDwSuFREDRQ=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Join hosts Hank Green, Kallie Moore, and Blake de Pastino as they take you on a journey through the history of life on Earth.",
+        "tags": ["science", "history"],
+        "url": "https://www.youtube.com/c/eons/videos"
+    },
+    {
+        "name": "Practical Engineering",
+        "image": "https://yt3.ggpht.com/a/AATXAJxJZY6Tkwum04hiU0D0_pI2YAOMV84B89u00yaUsA=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Increase exposure and interest in the field of engineering. I'm trying to highlight that connection between the world around us and the energy, passion, and thought that goes into making it a nicer place to live.",
+        "tags": ["engineering", "sustainability"],
+        "url": "https://www.youtube.com/c/PracticalEngineeringChannel/videos"
+    },
+    {
+        "name": "Primitive Technology",
+        "image": "https://yt3.ggpht.com/a/AATXAJyonU4tQHsT5M8L-yW4xjkVR4GdKZNpQztT4CtI=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Primitive technology is a hobby where you build things in the wild completely from scratch using no modern tools or materials.",
+        "tags": ["survival", "engineering"],
+        "url": "https://www.youtube.com/channel/UCAL3JXZSzSm8AlZyD3nQdBA/videos"
+    },
+    {
+        "name": "Qxir",
+        "image": "https://yt3.ggpht.com/a/AATXAJx-iwqIugQWAUM1Y38eSoSZAz2wurdoAeGM9APR=s100-c-k-c0xffffffff-no-rj-mo",
+        "description": "Investigations into lots of different subjects including the military, history, and science experiments gone wrong.",
+        "tags": ["mysteries", "investigations"],
+        "url": "https://www.youtube.com/channel/UCGHDQtN_vzFYJaq_Fx1eikg"
+    },
+    {
+        "name": "Sam the Cooking Guy",
+        "image": "https://yt3.ggpht.com/a/AATXAJwtncPrZI4ErlY7xPoycyOdkxC2ymuXbbSKVRuPkg=s100-c-k-c0xffffffff-no-rj-mo",
+        "description": "If you love food that’s big in taste, small in effort, and served with a healthy dose of irreverence… well, you’ve definitely come to the right place. ",
+        "tags": ["cooking"],
+        "url": "https://www.youtube.com/channel/UCbRj3Tcy1Zoz3rcf83nW5kw"
+    },
+    {
+        "name": "SciShow",
+        "image": "https://yt3.ggpht.com/a/AATXAJz7l1SVybs0VPRCnd0xSIoSIMnTTd9ABp8bSuRM=s88-c-k-c0x00ffffff-no-rj",
+        "description": "SciShow explores the unexpected. Seven days a week, Hank Green, Michael Aranda, and Olivia Gordon delve into the scientific subjects that defy our expectations and make us even more curious!",
+        "tags": ["science"],
+        "url": "https://www.youtube.com/c/SciShow/videos"
+    },
+    {
+        "name": "SideNote",
+        "image": "https://yt3.ggpht.com/a/AATXAJwPFhRpnfulbuqIypjxUhrRE2Bks1mzFO0ZPAh2Kg=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Video essays on some of the most obscure and forgotten stories.",
+        "tags": ["history", "geography", "science"],
+        "url": "https://www.youtube.com/c/SideNote1/videos"
+    },
+    {
+        "name": "Simon Sinek",
+        "image": "https://yt3.ggpht.com/a/AATXAJx3lemaJjfCWgGUofvOnuM4OFWuuYp5NziNp2chGA=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Simon Sinek is an unshakable optimist. He believes in a bright future and our ability to build it together.",
+        "tags": ["inspiration", "personal growth"],
+        "url": "https://www.youtube.com/user/SimonSinek/videos"
+    },
+    {
+        "name": "SmarterEveryDay",
+        "image": "https://yt3.ggpht.com/a/AATXAJw2iReKZCN7FGn0Mk2iFxO4fbBf7bpQeSjHf6IaIg=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Exploring the world using science. That's pretty much all there is to it.",
+        "tags": ["science", "technology", "experiments"],
+        "url": "https://www.youtube.com/c/smartereveryday/videos"
+    },
+    {
+        "name": "TED",
+        "image": "https://yt3.ggpht.com/a/AATXAJx6-1vXoG-hTU7F7S5A7QtDmQwbJhdMf3jM5nA5XQ=s100-c-k-c0xffffffff-no-rj-mo",
+        "description": "The world's leading thinkers and doers give the talk of their lives in 18 minutes (or less).",
+        "tags": ["science", "philosophy", "self improvement"],
+        "url": "https://www.youtube.com/c/TED/videos"
+    },
+    {
+        "name": "The Armchair Historian",
+        "image": "https://yt3.ggpht.com/a/AATXAJwCpzvks7572s1H8_sHVzL3z7GmlqMleglvJXxdJw=s88-c-k-c0x00ffffff-no-rj",
+        "description": "The Armchair Historian is a history channel specializing in animated military history.",
+        "tags": ["history", "military"],
+        "url": "https://www.youtube.com/c/TheArmchairHistorian/videos"
+    },
+    {
+        "name": "The School of Life",
+        "image": "https://yt3.ggpht.com/a/AATXAJxGXfgHC3VYzQPbIr5iKoO4JFEFK_Lz4DKUQ22q=s88-c-k-c0x00ffffff-no-rj",
+        "description": "We share ideas on how to understand ourselves better, improve our relationships, take stock of our careers and deepen our social connections - as well as find serenity and grow more confident in facing challenges.",
+        "tags": ["philosophy", "self improvement"],
+        "url": "https://www.youtube.com/c/theschooloflifetv/videos"
+    },
+    {
+        "name": "Urban Farmstead",
+        "image": "https://yt3.ggpht.com/a/AATXAJzogOEAWlhlaKoLwHWffnla9biR7szZo08aSGze=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Re-establishing the relationship between people and the food that they eat through instructional and educational gardening videos.",
+        "tags": ["gardening", "botany"],
+        "url": "https://www.youtube.com/channel/UCBZ3Cy7qR5oLtAoA3Eaa6RQ/videos"
+    },
+    {
+        "name": "Veritasium",
+        "image": "https://yt3.ggpht.com/a/AATXAJw91NvQRluSvZoLrGXkwMC6r0CwYjD58HftKSul8g=s88-c-k-c0x00ffffff-no-rj",
+        "description": "An element of truth - videos about science, education, and anything else I find interesting.",
+        "tags": ["science", "technology"],
+        "url": "https://www.youtube.com/c/veritasium/videos"
+    },
+    {
+        "name": "Vox",
+        "image": "https://yt3.ggpht.com/a/AATXAJwtlKs37Ldsel2J0PRv-ZFeDS5JszOOup706bHI-A=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Vox helps you cut through the noise and understand what's driving events in the headlines and in our lives.",
+        "tags": ["reporting", "politics"],
+        "url": "https://www.youtube.com/c/Vox/videos"
+    }
+]

@@ -8,11 +8,9 @@ permalink: /resources/
 
 
 <div class="row">
+    {% for item in resourcesList %}
     <div class="col-xl-4 mb-5">
-        <a href="/fitness/" class="btn btn-outline-primary py-3 d-block w-100 font-50">Fitness</a>
+        <a href="{{ item.url }}" class="btn btn-outline-primary py-3 d-block w-100 font-30">{{ item.name }}</a>
     </div><!-- end col -->
-
-    {#<div class="col-xl-4 mb-5">
-        <a href="/language/" class="btn btn-outline-primary py-3 d-block w-100 font-50">Language</a>
-    </div><!-- end col -->#}
+    {% endfor %}
 </div><!-- end row -->

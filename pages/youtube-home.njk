@@ -1,0 +1,54 @@
+---
+layout: layouts/base.njk
+title: "Youtube Channels"
+permalink: /youtube/
+---
+
+<h1>{{ title }}</h1>
+
+<p class="mb-5">Here are a few Youtube channels that I enjoy watching for continual learning. There are a wide variety for physics, engineering, and biology.</p>
+
+
+<div class="row">
+
+    {#
+        To Review:
+        https://www.youtube.com/channel/UClfEht64_NrzHf8Y0slKEjw // AlternateHistoryHub
+        https://www.youtube.com/c/ApertureScience/videos // Aperture
+        https://www.youtube.com/extracredits/videos // Extra Credits
+        https://www.youtube.com/user/FFreeThinker/videos // FFreeThinker
+        https://www.youtube.com/c/funfunfunction/videos // Fun Fun Function
+        https://www.youtube.com/c/Iliketomakestuff/videos // I Like To Make Stuff
+        https://www.youtube.com/c/itsokaytobesmart/videos // Its Okay To Be Smart
+        https://www.youtube.com/c/ThoughtworthyCo/videos // Thoughtworthy Co
+        https://www.youtube.com/c/ProjectBetterSelf/videos // Project Better Self
+        https://www.youtube.com/channel/UCJm2TgUqtK1_NLBrjNQ1P-w // Second thought // This might be too politically biased
+        https://www.youtube.com/c/SkillUpAcademy/videos // Skill Up Academy
+
+    #}
+
+    {% for item in youtubeChannels %}
+        <div class="col-xl-4 mb-5">
+            <div class="border p-3 h-100 d-flex flex-column">
+                <div class="row align-items-center mb-3">
+                    <div class="col-auto"><img src="{{ item.image }}" alt="{{ item.name }}" class=""></div>
+                    <div class="col"><h2 class="h3">{{ item.name }}</h2></div>
+                </div><!-- end row -->
+
+
+                <p>{{ item.description }}</p>
+
+                <div class="mt-auto">
+                    <p class="font-22"><a href="{{ item.url }}" target="_blank" rel="noopener">Youtube Channel</a></p>
+
+                    <p class="mb-0">Tags:</p>
+                    {% for tag in item.tags %}
+                        <span class="small mr-1 mb-1 d-inline-block">{{ tag }}</span>
+                    {% endfor %}
+                </div><!-- end margin -->
+            </div><!-- end card -->
+        </div><!-- end col -->
+    {% endfor %}
+
+</div><!-- end row -->
+
