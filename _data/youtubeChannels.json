@@ -1,12 +1,5 @@
 [
     {
-        "name": "Real Engineering",
-        "image": "https://yt3.ggpht.com/a/AATXAJy-b1i9ksgJgvS0cISLdqcNOh7DXSA_9-kzey3VkQ=s100-c-k-c0xffffffff-no-rj-mo",
-        "description": "Interesting answers to simple questions.",
-        "tags": ["engineering", "military", "energy", "space", "materials"],
-        "url": "https://www.youtube.com/c/RealEngineering/videos"
-    },
-    {
         "name": "Absolute History",
         "image": "https://yt3.ggpht.com/a/AATXAJzvC15xxbOjMOEjWyaaTIYBMjD5kJOhDUyN0bY0wg=s88-c-k-c0x00ffffff-no-rj",
         "description": "Welcome to Absolute History - the home of fun, shocking and curious tales from throughout history.",
@@ -154,6 +147,13 @@
         "url": "https://www.youtube.com/channel/UCGHDQtN_vzFYJaq_Fx1eikg"
     },
     {
+        "name": "Real Engineering",
+        "image": "https://yt3.ggpht.com/a/AATXAJy-b1i9ksgJgvS0cISLdqcNOh7DXSA_9-kzey3VkQ=s100-c-k-c0xffffffff-no-rj-mo",
+        "description": "Interesting answers to simple questions.",
+        "tags": ["engineering", "military", "energy", "space", "materials"],
+        "url": "https://www.youtube.com/c/RealEngineering/videos"
+    },
+    {
         "name": "Sam the Cooking Guy",
         "image": "https://yt3.ggpht.com/a/AATXAJwtncPrZI4ErlY7xPoycyOdkxC2ymuXbbSKVRuPkg=s100-c-k-c0xffffffff-no-rj-mo",
         "description": "If you love food that’s big in taste, small in effort, and served with a healthy dose of irreverence… well, you’ve definitely come to the right place. ",
@@ -208,6 +208,13 @@
         "description": "We share ideas on how to understand ourselves better, improve our relationships, take stock of our careers and deepen our social connections - as well as find serenity and grow more confident in facing challenges.",
         "tags": ["philosophy", "self improvement"],
         "url": "https://www.youtube.com/c/theschooloflifetv/videos"
+    },
+    {
+        "name": "Thoughtworthy Co",
+        "image": "https://yt3.ggpht.com/a/AATXAJxKBZ5n-sQk0G0iBg9gVI18fGpPcJySGkmCd1rstQ=s88-c-k-c0x00ffffff-no-rj",
+        "description": "Thoughtworthy Co crafts content about health and happiness. We hope to share stories about the things in life worth thinking about — taking better care of our health, pursuing happiness, and being more considerate guests on the planet that we call home.",
+        "tags": ["lifestyle", "minimalism", "health"],
+        "url": "https://www.youtube.com/c/ThoughtworthyCo/videos"
     },
     {
         "name": "Urban Farmstead",
