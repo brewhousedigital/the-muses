@@ -2,6 +2,7 @@ _site/
 node_modules/
 package-lock.json
 .idea
+feed/feed.njk
 
 
 # Temporarily hide pages or posts
