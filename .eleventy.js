@@ -81,6 +81,10 @@ module.exports = function(eleventyConfig) {
 
         } else if(videoType === "curiositystream") {
             url = "<div><a href='" + sourceURL + "' target='_blank' rel='noopener'><img src='" + videoCover + "' alt='' class='border-radius-20'></a></div>";
+        } else if(videoType === "pbs") {
+            url = `
+            <div class="pbs-viral-player-wrapper" style="position: relative; padding-top: calc(56.25% + 43px);"><iframe src="https://player.pbs.org/viralplayer/${videoID}/" allowfullscreen style="position: absolute; top: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
+            `;
         }
 
         return url;
