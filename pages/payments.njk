@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+permalink: /payments/
+title: Payments
+---
+
+
+<h1>{{ title }}</h1>
+
+
+<h2>Your Cart</h2>
+<p>Yuri Print: $125</p>
+<p>Todoroki Print: $50</p>
+
+<button type="button" class="btn btn-primary btn-lg" data-checkout>Checkout</button>
+
+
+
+<script src="https://js.stripe.com/v3/"></script>
+<script defer>
+    let stripe = Stripe('pk_test_TSavRWnttFqTqMxB1rw3UuJI00p0msJps6');
+
+    let cart = [
+        {price: "price_1HgBe7AJ0nJqC5SaCSOS1jyb", quantity: 1},
+        {price: "price_1Hf5w6AJ0nJqC5SaZ9TSlaWu", quantity: 1},
+    ]
+
+    function StripeCheckout(productList) {
+        stripe
+            .redirectToCheckout({
+                lineItems: productList,
+                mode: 'payment',
+                successUrl: 'https://www.google.com?status=success',
+                cancelUrl: 'https://www.google/?status=cancel',
+            })
+            .then(function(result) {
+                console.log(result);
+            });
+    }
+
+    document.querySelector("[data-checkout]").addEventListener("click", function() {
+        StripeCheckout(cart);
+    });
+</script>
